@@ -1,0 +1,68 @@
+<% include partials/_header %>
+
+<div class="container at-5">
+<div class="row">
+    <div class="col-md-5">
+
+        <div class="card">
+            <div class="card-body">
+                
+               
+                
+                    <h2>Ingrse sus datos personales</h2>
+
+                    <div>
+                            <select name="opcion" id="opcion">
+                             
+                                            <option value="1">Administrador</option>
+                                            
+                                            <option value="2">Cliente</option>
+                                            
+                                            <option value="3">Tecnico</option>
+                                            
+                                            </select>
+        
+                                           
+                                        </div>
+     
+                            <div id="Cliente"  >
+                                    <form action="/cliente>" method="post" > 
+
+
+                                        <div class="form-group"> 
+                                            <input type="text" required name="intID" placeholder="Documento de indentidad"  class="form-control">  
+                                        </div>
+                                        <div class="form-group"> 
+                                            <input type="text" required name="strNombre" placeholder="Nombre"  class="form-control">   
+                                        </div>
+                                        <div class="form-group"> 
+                                            <input type="text" required name="strCorreo" placeholder="Correo electronico"  class="form-control">   
+                                        </div>
+                                        <div class="form-group"> 
+                                            <input type="password" required name="strContraseña" placeholder="Contraseña"  class="form-control">   
+                                        </div>
+                                        
+                                        <button type="submit" class="btn btn-primary"> 
+                                            Registrarse
+                                        </button>
+                                        
+                                        
+                                    
+                    
+                                    </form>
+
+                            </div>
+                            
+                
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+    
+
+
+<% include partials/_footer %>
